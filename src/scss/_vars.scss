@@ -11,6 +11,12 @@ $btn: #07070b;
   font-weight: 700;
 }
 
+@mixin gilroy-semibold {
+  font-family: "Gilroy-Semibold", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
 @mixin btn {
   padding: 22px 38px;
   background: #f2d080;

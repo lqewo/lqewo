@@ -73,6 +73,7 @@ body {
 }
 
 .title {
+  @include gilroy-bold;
   font-size: 42px;
   line-height: 46px;
 }

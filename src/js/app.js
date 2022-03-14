@@ -18,25 +18,39 @@ flsFunction.isWebp();
     autoplaySpeed: 0,
     autoplay: true,
     responsive: [
-      {
-        breakpoint: 768,
+		{
+        breakpoint: 1060,
         settings: {
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 5
-        }
-      },
-      {
-        breakpoint: 480,
+          slidesToShow: 2
+			}
+        },
+		{
+        breakpoint: 530,
         settings: {
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 5
+          slidesToShow: 1
+		}
         }
-      }
     ]
+  });
+
+  if($(window).width() < 990) {
+	  $('.instruments__inner').addClass('instruments__inner--slider');
+  }
+  else {
+	  $('.instruments__inner').removeClass('instruments__inner--slider');
+  }
+  
+  $('.instruments__inner--slider').slick({
+        arrows: false,
+		dots: true,
+		slidesToScroll: 1,
+		autoplaySpeed: 0,
   });
     $('.feedback__item-raiting').rateYo({
 		starWidth: "32px",
