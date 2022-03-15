@@ -408,7 +408,8 @@
 
   &__inner {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-align: center;
   }
 
@@ -455,18 +456,22 @@
 .footer {
   background-color: #000;
 }
+
 .social {
-  // .social__item
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   align-items: center;
   text-align: center;
   margin-top: 56px;
   margin-bottom: 32px;
 
+  // .social__item
   &__item {
+    &:not(&:last-child) {
+      padding-right: 32px;
+    }
     text-align: center;
-    padding-right: 32px;
     display: flex;
   }
 
