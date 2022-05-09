@@ -442,7 +442,7 @@ body {
 .feedback__item {
   padding: 15px;
   width: 360px;
-  height: 275px;
+  min-height: 275px;
   background-color: #fff;
   border-radius: 16px;
 }
