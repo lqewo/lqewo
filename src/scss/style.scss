@@ -15,10 +15,19 @@
   }
 
   &__language {
+    display: inline-block;
+    color: #fff;
     margin-right: 48px;
     font-size: 12px;
     line-height: 12px;
     text-transform: uppercase;
+  }
+
+  &__language-change {
+    display: none;
+    &.active {
+      display: block;
+    }
   }
 
   &__login {
