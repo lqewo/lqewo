@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/head.html', { "title":"WhiteBit" })
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="files/rateyo/jquery.rateyo.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>WhiteBit</title>
+</head>
 	<body>
-		@@include('html/header.html', {})
+		<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<a class="header__logo" href="#"><img src="img/logo.svg"></img></a>
+			<div class="header__option">
+				<div class="header__language" >
+					<button id="changeLang" value="ru"class="header__language-change active">RU</button>
+					<button id="changeLang" value="en" class="header__language-change">EN</button>
+				</div>
+				<button class="header__login header__login-lng">Войти</button>
+			</div>
+		</div>
+	</div>
+</header>
 		<section class="content">
 			<div class="container">
 				<div class="content__inner">
@@ -23,12 +45,12 @@
 					<div class="content-right">
 						<img
 							class="content-img content-img--comp"
-							src="@img/comp.png"
+							src="img/comp.png"
 							alt=""
 						/>
 						<img
 							class="content-img content-img--phone"
-							src="@img/phone.png"
+							src="img/phone.png"
 							alt=""
 						/>
 					</div>
@@ -75,45 +97,45 @@
 			</div>
 			<div class="crypt__inner slider">
 				<div class="crypt__item">
-					<img class="crypt__item-image" src="@img/crypt-1.svg" alt="" />
+					<img class="crypt__item-image" src="img/crypt-1.svg" alt="" />
 					<div class="crypt__item-text">Bitcoin</div>
 				</div>
 				<div class="crypt__item">
-					<img class="crypt__item-image" src="@img/crypt-2.svg" alt="" />
+					<img class="crypt__item-image" src="img/crypt-2.svg" alt="" />
 					<div class="crypt__item-text">Etherum</div>
 				</div>
 				<div class="crypt__item">
-					<img class="crypt__item-image" src="@img/crypt-3.svg" alt="" />
+					<img class="crypt__item-image" src="img/crypt-3.svg" alt="" />
 					<div class="crypt__item-text">Tether</div>
 				</div>
 				<div class="crypt__item">
-					<img class="crypt__item-image" src="@img/crypt-4.svg" alt="" />
+					<img class="crypt__item-image" src="img/crypt-4.svg" alt="" />
 					<div class="crypt__item-text">Doge</div>
 				</div>
 				<div class="crypt__item">
-					<img class="crypt__item-image" src="@img/crypt-5.svg" alt="" />
+					<img class="crypt__item-image" src="img/crypt-5.svg" alt="" />
 					<div class="crypt__item-text">Stellar</div>
 				</div>
 			</div>
 			<div class="crypt__inner crypt__inner--two slider">
 				<div class="crypt__item">
-					<img class="crypt__item-image" src="@img/crypt-6.svg" alt="" />
+					<img class="crypt__item-image" src="img/crypt-6.svg" alt="" />
 					<div class="crypt__item-text">Ripple</div>
 				</div>
 				<div class="crypt__item">
-					<img class="crypt__item-image" src="@img/crypt-7.svg" alt="" />
+					<img class="crypt__item-image" src="img/crypt-7.svg" alt="" />
 					<div class="crypt__item-text">Dash</div>
 				</div>
 				<div class="crypt__item">
-					<img class="crypt__item-image" src="@img/crypt-8.svg" alt="" />
+					<img class="crypt__item-image" src="img/crypt-8.svg" alt="" />
 					<div class="crypt__item-text">Litecoin</div>
 				</div>
 				<div class="crypt__item">
-					<img class="crypt__item-image" src="@img/crypt-9.svg" alt="" />
+					<img class="crypt__item-image" src="img/crypt-9.svg" alt="" />
 					<div class="crypt__item-text">Stellar</div>
 				</div>
 				<div class="crypt__item">
-					<img class="crypt__item-image" src="@img/crypt-10.svg" alt="" />
+					<img class="crypt__item-image" src="img/crypt-10.svg" alt="" />
 					<div class="crypt__item-text">Tron</div>
 				</div>
 			</div>
@@ -126,37 +148,37 @@
 				</div>
 				<div class="card__inner">
 					<a class="card__item" href="#">
-						<img class="card__item-img" src="@img/card1.png" alt="" />
+						<img class="card__item-img" src="img/card1.png" alt="" />
 						<div class="card__item-text card__item-text-1-lng">
 							Техподдержка, которая поможет с любым вопросом 24/7
 						</div>
 					</a>
 					<a class="card__item" href="#">
-						<img class="card__item-img" src="@img/card2.png" alt="" />
+						<img class="card__item-img" src="img/card2.png" alt="" />
 						<div class="card__item-text card__item-text-2-lng">
 							Пассивный заработок до 30% годовых в USDT
 						</div>
 					</a>
 					<a class="card__item" href="#">
-						<img class="card__item-img" src="@img/card3.png" alt="" />
+						<img class="card__item-img" src="img/card3.png" alt="" />
 						<div class="card__item-text card__item-text-3-lng">
 							Безопасность, подтвержденная пользователями и рейтингом Cer.live
 						</div>
 					</a>
 					<a class="card__item" href="#">
-						<img class="card__item-img" src="@img/card4.png" alt="" />
+						<img class="card__item-img" src="img/card4.png" alt="" />
 						<div class="card__item-text card__item-text-4-lng">
 							Торговая комиссия всего 0,1%
 						</div>
 					</a>
 					<a class="card__item" href="#">
-						<img class="card__item-img" src="@img/card5.png" alt="" />
+						<img class="card__item-img" src="img/card5.png" alt="" />
 						<div class="card__item-text card__item-text-5-lng">
 							Реферальная программа с процентами за друзей
 						</div>
 					</a>
 					<a class="card__item" href="#">
-						<img class="card__item-img" src="@img/card6.png" alt="" />
+						<img class="card__item-img" src="img/card6.png" alt="" />
 						<div class="card__item-text card__item-text-6-lng">
 							Бесплатные Демо токены для изучения торговли
 						</div>
@@ -180,7 +202,7 @@
 							6 видов ордеров и множество индикаторов
 						</div>
 						<div class="instruments__item-img">
-							<img src="@img/screen-1.png" alt="" />
+							<img src="img/screen-1.png" alt="" />
 						</div>
 					</div>
 					<div class="instruments__item">
@@ -188,7 +210,7 @@
 							Всегда актуальные курсы
 						</div>
 						<div class="instruments__item-img">
-							<img src="@img/screen-2.png" alt="" />
+							<img src="img/screen-2.png" alt="" />
 						</div>
 					</div>
 					<div class="instruments__item">
@@ -196,7 +218,7 @@
 							Разделение на основной и торговый балансы
 						</div>
 						<div class="instruments__item-img">
-							<img src="@img/screen-3.png" alt="" />
+							<img src="img/screen-3.png" alt="" />
 						</div>
 					</div>
 				</div>
@@ -291,21 +313,21 @@
 				<div class="start__title start__title-lng title">Легко начать</div>
 				<div class="start__inner">
 					<div class="start__item">
-						<img src="@img/start-1.png" alt="" class="item-img" />
+						<img src="img/start-1.png" alt="" class="item-img" />
 						<div class="item-text item-text-1-lng">Зарегистрируйся</div>
 					</div>
 					<div class="img-pixel">
-						<img src="@img/pixel.png" alt="" class="pixel" />
+						<img src="img/pixel.png" alt="" class="pixel" />
 					</div>
 					<div class="start__item">
-						<img src="@img/start-2.png" alt="" class="item-img" />
+						<img src="img/start-2.png" alt="" class="item-img" />
 						<div class="item-text item-text-2-lng">Сделай депозит</div>
 					</div>
 					<div class="img-pixel">
-						<img src="@img/pixel.png" alt="" class="pixel" />
+						<img src="img/pixel.png" alt="" class="pixel" />
 					</div>
 					<div class="start__item">
-						<img src="@img/start-3.png" alt="" class="item-img" />
+						<img src="img/start-3.png" alt="" class="item-img" />
 						<div class="item-text item-text-3-lng">
 							Начни торговать и инвестировать
 						</div>
@@ -318,7 +340,74 @@
 			</div>
 		</section>
 
-		@@include('html/footer.html', {})
+		<footer class="footer">
+	<div class="container">
+		<div class="social">
+			<a href="#" class="social__item">
+				<div class="social__item-icon">
+					<img
+						src="img/icons.svg#linkedin"
+						class="svg-linkedin-dims"
+						alt="linkedin"
+					/>
+				</div>
+				<div class="social__item-text">LinkedIn</div>
+			</a>
+			<a href="#" class="social__item">
+				<div class="social__item-icon">
+					<img
+						src="img/icons.svg#telegram"
+						class="svg-linkedin-dims"
+						alt="telegram"
+					/>
+				</div>
+				<div class="social__item-text">Telegram</div>
+			</a>
+			<a href="#" class="social__item">
+				<div class="social__item-icon">
+					<img
+						src="img/icons.svg#reddit"
+						class="svg-reddit-dims"
+						alt="reddit"
+					/>
+				</div>
+				<div class="social__item-text">Reddit</div>
+			</a>
+			<a href="#" class="social__item">
+				<div class="social__item-icon">
+					<img src="img/icons.svg#fb" class="svg-fb-dims" alt="fb" />
+				</div>
+				<div class="social__item-text">Facebook</div>
+			</a>
+			<a href="#" class="social__item">
+				<div class="social__item-icon">
+					<img
+						src="img/icons.svg#twitter"
+						class="svg-twitter-dims"
+						alt="twitter"
+					/>
+				</div>
+				<div class="social__item-text">Twitter</div>
+			</a>
+			<a href="#" class="social__item">
+				<div class="social__item-icon">
+					<img
+						src="img/icons.svg#youtube"
+						class="svg-youtube-dims"
+						alt="youtube"
+					/>
+				</div>
+				<div class="social__item-text">YouTube</div>
+			</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="copyright copyright-lng">
+			© 2018 - 2021 WhiteBIT.com Все права защищены.
+		</div>
+	</div>
+</footer>
+
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script
