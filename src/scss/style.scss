@@ -13,12 +13,19 @@
     justify-content: space-between;
     align-items: center;
   }
-
   &__language {
+    display: inline-block;
+  }
+  &__language-change {
+    display: none;
     margin-right: 48px;
     font-size: 12px;
     line-height: 12px;
     text-transform: uppercase;
+
+    &.active {
+      display: block;
+    }
   }
 
   &__login {
@@ -68,6 +75,7 @@
   }
   .btn {
     @include btn;
+    min-width: 202px;
   }
 
   &-right {
@@ -304,6 +312,7 @@
 
     & .btn {
       @include btn;
+      min-width: 202px;
       margin: 0 auto;
       font-size: 14px;
       line-height: 21px;
@@ -429,6 +438,7 @@
   }
 
   &__btn {
+    min-width: 202px;
     @include btn;
   }
   .btn {
